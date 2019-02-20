@@ -23,7 +23,7 @@ Primeiramente é necessário instalar o PM2 na máquina, ele é responsável por
 ## Para ativar Load Balancer com PM2:
 - pm2 start app.js -i <Número de Instâncias>
 
-## Para ativer o Watch & Restart 
+## Para ativer o Watch & Restart com PM2: 
 - pm2 start app.js --watch
 
 ## Para criar um Script pré-definido para ambiente de produção e desenvolvimento
