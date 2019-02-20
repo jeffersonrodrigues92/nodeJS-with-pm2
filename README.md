@@ -1,11 +1,11 @@
-##Node JS com PM2 (Gerencimento de Processos)
+## Node JS com PM2 (Gerencimento de Processos)
 
 Primeiramente é necessário instalar o PM2 na máquina, ele é responsável por gerenciar os processos da aplicação Node JS.
 
-Para instalação do PM2:
+## Para instalação do PM2:
 - npm install pm2 -g
 
-Para iniciar uma instância com PM2:
+## Para iniciar uma instância com PM2:
 - pm2 start app.js
 
 Para parar uma instâncias com PM2:
