@@ -11,7 +11,7 @@ module.exports = function(app){
     app.get("/home/:id", function(req, res){
         res.send({
             param : req.params,
-            queryParam: req.query
+            queryParam: req.query 
         });
     });
 }
