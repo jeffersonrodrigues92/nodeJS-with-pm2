@@ -13,7 +13,7 @@ Resources:
       Description: AWS ElasticBeanstalk Sample Application Version
       SourceBundle:
         S3Bucket: !Sub "codepipeline-us-east-1-216598164744-${AWS::Region}/van-api/SourceArti"
-        S3Key: php-newsample-app.zip
+        S3Key: 2yR82GX.zip
   
   sampleConfigurationTemplate:
     Type: AWS::ElasticBeanstalk::ConfigurationTemplate
@@ -21,13 +21,6 @@ Resources:
       ApplicationName:
         Ref: sampleApplication
       Description: AWS ElasticBeanstalk Sample Configuration Template
-      OptionSettings:
-      - Namespace: aws:autoscaling:asg
-        OptionName: MinSize
-        Value: '1'
-      - Namespace: aws:autoscaling:asg
-        OptionName: MaxSize
-        Value: '1'
       SolutionStackName: 64bit Amazon Linux 2018.03 v4.8.0 running Node.js
   
   sampleEnvironment:
