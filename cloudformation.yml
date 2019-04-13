@@ -3,7 +3,7 @@ Resources:
   sampleApplication:
     Type: AWS::ElasticBeanstalk::Application
     Properties:
-      Description: AWS Elastic Beanstalk
+      Description: AWS Elastic Beanstalk 
   
   sampleApplicationVersion:
     Type: AWS::ElasticBeanstalk::ApplicationVersion
@@ -28,6 +28,7 @@ Resources:
       - Namespace: aws:autoscaling:asg
         OptionName: MaxSize
         Value: '1'
+      SolutionStackName: 64bit Amazon Linux 2018.03 v4.8.0 running Node.js
   
   sampleEnvironment:
     Type: AWS::ElasticBeanstalk::Environment
