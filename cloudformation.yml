@@ -12,7 +12,7 @@ Resources:
         Ref: sampleApplication
       Description: AWS ElasticBeanstalk Sample Application Version
       SourceBundle:
-        S3Bucket: !Sub "elasticbeanstalk-samples-${AWS::Region}"
+        S3Bucket: !Sub "codepipeline-us-east-1-216598164744-${AWS::Region}/van-api/SourceArti"
         S3Key: php-newsample-app.zip
   
   sampleConfigurationTemplate:
@@ -28,7 +28,6 @@ Resources:
       - Namespace: aws:autoscaling:asg
         OptionName: MaxSize
         Value: '1'
-      SolutionStackName: van-api-teste
   
   sampleEnvironment:
     Type: AWS::ElasticBeanstalk::Environment
@@ -36,7 +35,5 @@ Resources:
       ApplicationName:
         Ref: sampleApplication
       Description: AWS ElasticBeanstalk Sample Environment
-      TemplateName:
-        Ref: sampleConfigurationTemplate
       VersionLabel:
         Ref: sampleApplicationVersion
