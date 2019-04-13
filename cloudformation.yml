@@ -28,7 +28,7 @@ Resources:
       - Namespace: aws:autoscaling:asg
         OptionName: MaxSize
         Value: '1'
-      SolutionStackName: NodeJS Amazon Linux
+      SolutionStackName: van-api-teste
   
   sampleEnvironment:
     Type: AWS::ElasticBeanstalk::Environment
