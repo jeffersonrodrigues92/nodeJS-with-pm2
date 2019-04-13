@@ -12,7 +12,7 @@ Resources:
         Ref: sampleApplication
       Description: AWS ElasticBeanstalk Sample Application Version
       SourceBundle:
-        S3Bucket: !Sub "codepipeline-us-east-1-216598164744-${AWS::Region}/van-api/SourceArti"
+        S3Bucket: !Sub "codepipeline-us-east-1-216598164744-${AWS::Region}"
         S3Key: 2yR82GX.zip
   
   sampleConfigurationTemplate:
