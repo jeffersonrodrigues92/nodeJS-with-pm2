@@ -22,7 +22,7 @@ Resources:
       Description: AWS ElasticBeanstalk Sample Configuration Template
       SourceConfiguration: 
         ApplicationName: van-api
-      TemplateName: van-api
+        TemplateName: van-api
   
   Environment:
     Type: AWS::ElasticBeanstalk::Environment
