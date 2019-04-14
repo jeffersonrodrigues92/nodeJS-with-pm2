@@ -13,3 +13,7 @@ phases:
     commands:
       - echo Compiling the Node.js code
       - pm2 start app.js -i 2
+artifacts:
+  files:
+    - '**/*'
+  name: van-api-$(date +%Y-%m-%d)
