@@ -17,7 +17,6 @@ Resources:
   
   ConfigurationTemplate:
     Type: AWS::ElasticBeanstalk::ConfigurationTemplate
-    Name: Template
     Properties:
       ApplicationName: application
       Description: AWS ElasticBeanstalk Sample Configuration Template
