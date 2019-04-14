@@ -3,6 +3,7 @@ Resources:
   application:
     Type: AWS::ElasticBeanstalk::Application
     Properties:
+      ApplicationName: van-api
       Description: AWS Elastic Beanstalk 
   
   applicationVersion:
@@ -17,7 +18,7 @@ Resources:
   ConfigurationTemplate:
     Type: AWS::ElasticBeanstalk::ConfigurationTemplate
     Properties:
-      ApplicationName: application
+      ApplicationName: !Ref application
       Description: AWS ElasticBeanstalk Sample Configuration Template
       SolutionStackName: 64bit Amazon Linux 2018.03 v4.8.2 running Node.js
 
