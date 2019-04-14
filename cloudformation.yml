@@ -1,33 +1,32 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
-  sampleApplication:
+  application:
     Type: AWS::ElasticBeanstalk::Application
     Properties:
       Description: AWS Elastic Beanstalk 
   
-  sampleApplicationVersion:
+  applicationVersion:
     Type: AWS::ElasticBeanstalk::ApplicationVersion
     Properties:
       ApplicationName:
-        Ref: sampleApplication
+        Ref: application
       Description: AWS ElasticBeanstalk Sample Application Version
       SourceBundle:
         S3Bucket: !Sub "codepipeline-us-east-1-216598164744-${AWS::Region}"
         S3Key: 2yR82GX.zip
   
-  sampleConfigurationTemplate:
+  ConfigurationTemplate:
     Type: AWS::ElasticBeanstalk::ConfigurationTemplate
     Properties:
       ApplicationName:
-        Ref: sampleApplication
+        Ref: application
       Description: AWS ElasticBeanstalk Sample Configuration Template
       SolutionStackName: 64bit Amazon Linux 2018.03 v4.5.0 running Node.js
   
-  sampleEnvironment:
+  Environment:
     Type: AWS::ElasticBeanstalk::Environment
     Properties:
-      ApplicationName:
-        Ref: sampleApplication
+      ApplicationName: !Ref application
       Description: AWS ElasticBeanstalk Sample Environment
       VersionLabel:
-        Ref: sampleApplicationVersion
+        Ref: applicationVersion

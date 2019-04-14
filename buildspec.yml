@@ -14,4 +14,4 @@ phases:
 artifacts:
   files:
     - '**/*'
-  name: van-api-$(date +%Y-%m-%d)
+  name: van-api-{datetime}
