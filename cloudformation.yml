@@ -21,7 +21,6 @@ Resources:
       ApplicationName:
         Ref: sampleApplication
       Description: AWS ElasticBeanstalk Sample Configuration Template
-      SolutionStackName: 64bit Amazon Linux 2018.03 v8.12.0. running Node.js
   
   sampleEnvironment:
     Type: AWS::ElasticBeanstalk::Environment
