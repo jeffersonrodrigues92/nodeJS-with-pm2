@@ -16,7 +16,7 @@ Resources:
         Fn::Join: 
           - "-"
           - 
-            - "codepipeline-216598164744"
+            - codepipeline-us-east-1-216598164744
             - Ref: "AWS::Region"
       S3Key: Mb0HTsS.zip
   
