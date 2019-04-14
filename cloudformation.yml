@@ -2,7 +2,6 @@ AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   application:
     Type: AWS::ElasticBeanstalk::Application
-    Name: van-api
     Properties:
       Description: AWS Elastic Beanstalk 
   
