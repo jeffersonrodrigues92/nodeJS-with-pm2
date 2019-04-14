@@ -11,7 +11,8 @@ phases:
   build:
     commands:
       - echo Compiling the Node.js code
+      - echo van-api-$(date +%Y-%m-%d)
 artifacts:
   files:
     - '**/*'
-  name: van-api-{datetime}
+  name: van-api-$(date +%Y-%m-%d)
