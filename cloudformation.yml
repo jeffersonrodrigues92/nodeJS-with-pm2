@@ -23,7 +23,7 @@ Resources:
         Ref: application
       Description: AWS ElasticBeanstalk Sample Configuration Template
       SourceConfiguration: 
-        ApplicationName: !Ref: applications
+        ApplicationName: !Ref: application
         TemplateName: !Ref ConfigurationTemplate
   
   Environment:
