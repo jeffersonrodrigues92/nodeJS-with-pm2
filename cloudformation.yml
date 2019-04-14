@@ -12,8 +12,8 @@ Resources:
         Ref: application
       Description: AWS ElasticBeanstalk Sample Application Version
       SourceBundle:
-        S3Bucket: !Sub "codepipeline-us-east-1-216598164744-${AWS::Region}"
-        S3Key: 2yR82GX.zip
+        S3Bucket: !Sub "arn:aws:s3:::codepipeline-216598164744-${AWS::Region}-216598164744/van-api/van-api-ou"
+        S3Key: Mb0HTsS.zip
   
   ConfigurationTemplate:
     Type: AWS::ElasticBeanstalk::ConfigurationTemplate
