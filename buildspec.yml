@@ -3,8 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing Mocha...
-      - npm install -g pm2
+      - echo Installing...
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
@@ -12,7 +11,6 @@ phases:
   build:
     commands:
       - echo Compiling the Node.js code
-      - pm2 start app.js -i 2
 artifacts:
   files:
     - '**/*'
