@@ -3,6 +3,7 @@ Resources:
   application:
     Type: AWS::ElasticBeanstalk::Application
     Properties:
+      ApplicationName: van-api
       Description: AWS Elastic Beanstalk 
   
   applicationVersion:
