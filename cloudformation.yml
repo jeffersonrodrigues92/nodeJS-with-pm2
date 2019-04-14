@@ -3,14 +3,13 @@ Resources:
   application:
     Type: AWS::ElasticBeanstalk::Application
     Properties:
-      ApplicationName: van-api
+      ApplicationName: !Ref application
       Description: AWS Elastic Beanstalk 
   
   applicationVersion:
     Type: AWS::ElasticBeanstalk::ApplicationVersion
     Properties:
-      ApplicationName:
-        Ref: application
+      ApplicationName: !Ref application 
       Description: AWS ElasticBeanstalk Sample Application Version
       SourceBundle:
         S3Bucket: !Sub "codepipeline-216598164744/van-api/van-api-ou/"
@@ -22,7 +21,7 @@ Resources:
       ApplicationName: application
       Description: AWS ElasticBeanstalk Sample Configuration Template
       SourceConfiguration: 
-        ApplicationName: van-api
+        ApplicationName: !Ref application
         TemplateName: van-api
   
   Environment:
