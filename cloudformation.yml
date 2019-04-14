@@ -17,11 +17,14 @@ Resources:
   
   ConfigurationTemplate:
     Type: AWS::ElasticBeanstalk::ConfigurationTemplate
+    Name: Template
     Properties:
       ApplicationName:
         Ref: application
       Description: AWS ElasticBeanstalk Sample Configuration Template
-      SolutionStackName: 64bit Amazon Linux 2018.03 v4.5.0 running Node.js
+      SourceConfiguration: 
+        ApplicationName: Ref: applications
+        TemplateName: !Ref ConfigurationTemplate
   
   Environment:
     Type: AWS::ElasticBeanstalk::Environment
