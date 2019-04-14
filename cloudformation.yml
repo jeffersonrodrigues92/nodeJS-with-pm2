@@ -19,8 +19,7 @@ Resources:
     Type: AWS::ElasticBeanstalk::ConfigurationTemplate
     Name: Template
     Properties:
-      ApplicationName:
-        Ref: application
+      ApplicationName: application
       Description: AWS ElasticBeanstalk Sample Configuration Template
       SourceConfiguration: 
         ApplicationName: van-api
