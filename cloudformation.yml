@@ -13,7 +13,7 @@ Resources:
       Description: AWS ElasticBeanstalk Sample Application Version
       SourceBundle:
         S3Bucket: codepipeline-us-east-1-216598164744
-        S3Key: Mb0HTsS.zip
+        S3Key: van-api.zip
   
   ConfigurationTemplate:
     Type: AWS::ElasticBeanstalk::ConfigurationTemplate
