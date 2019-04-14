@@ -26,6 +26,8 @@ Resources:
     Type: AWS::ElasticBeanstalk::Environment
     Properties:
       ApplicationName: !Ref application
+      CNAMEPrefix : van-api
       Description: AWS ElasticBeanstalk Sample Environment
+      SolutionStackName: 64bit Amazon Linux 2018.03 v4.8.2 running Node.js
       VersionLabel:
         Ref: applicationVersion
